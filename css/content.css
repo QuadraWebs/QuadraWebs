@@ -5,9 +5,7 @@ width: 100%;
 margin-top:115px;
 display: flex;
     flex-direction: row;
-   
-   flex-flow: wrap;
-
+    flex-flow: wrap;
 }
 .app-text{
     padding-top: 150px;
