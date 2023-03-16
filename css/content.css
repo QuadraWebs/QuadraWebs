@@ -7,15 +7,20 @@ display: flex;
     flex-direction: row;
     flex-flow: wrap;
 }
-.app-text{
-    padding-top: 150px;
+.app-texts{
     width: 40%;
-    float: left;
-}
-.app-picture{
-   width: 60%;
     float: right;
-   padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 70px 50px;
+    background: #FFF;
+}
+.app-pictures{
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .app-text h3{
@@ -81,30 +86,56 @@ display: flex;
     width: 20%;
     margin: 30px;
     text-align: center;
-    background-color: #eceef0ea;
-    border-radius: 15px;
-    box-shadow: inset -5px -5px 9px rgba(237, 231, 231, 0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    background-color: #f2cc8f;
+    border-radius: 0.75em;
+    border: 2px solid #b18597;
+    transition-delay: 200ms;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+
+
+}
+.btn-group{
 
 }
 .team:nth-child(2){
     transition-delay: 200ms;
 }
 .team:nth-child(3){
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 
 }.team:nth-child(4){
-    transition-delay: 600ms;
+    transition-delay: 200ms;
 
 }
 
 @media screen and (max-width:1200px){
-    .team{
-        width: 40%;
+    .app-texts{
+        width: 100%;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0px 50px;
+        background: #FFF;
     }
+    .app-pictures{
+        width: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        height:500px;
+    }
+    .team{
+        width: 45%;
+    }
+
+   
+
 }
 
 @media screen and (max-width:600px){
     .team{
         width:90%;
     }
+    
 }
