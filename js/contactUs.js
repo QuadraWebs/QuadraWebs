@@ -3,7 +3,9 @@ const email = document.getElementById('Contact-1-Email');
 const question = document.getElementById('Contact-1-Message');
 const submit = document.getElementsByClassName('form-contact')[0];
 
-submit.addEventListener('wf-form-Contact-1-Form',(e)=>{
+console.log(custName);
+
+submit.addEventListener('submit',(e)=>{
     e.preventDefault();
     console.log("Clicked");
 
