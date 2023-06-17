@@ -1,9 +1,8 @@
 const custName = document.getElementById('Contact-1-Name');
 const email = document.getElementById('Contact-1-Email');
 const question = document.getElementById('Contact-1-Message');
-const submit = document.getElementsByClassName('form-contact')[0];
+const submit = document.getElementsByClassName('combine-form_form')[0];
 
-console.log(custName);
 
 submit.addEventListener('submit',(e)=>{
     e.preventDefault();
