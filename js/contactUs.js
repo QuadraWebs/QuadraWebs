@@ -22,6 +22,11 @@ submit.addEventListener('submit',(e)=>{
         Subject : "Enquires from" + email.value,
         Body : ebody
     }).then(
-      message => alert(message)
+      //message => alert("THanks")
+      function (message) {
+        var successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+      }
+    
     );
 });
