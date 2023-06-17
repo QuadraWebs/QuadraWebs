@@ -20,9 +20,14 @@ submit.addEventListener('submit',(e)=>{
         SecureToken : "371cd294-400e-49df-b53d-8900abed8f98",
         To : 'quadrawebs@gmail.com', 
         From : "quadrawebs@gmail.com",
-        Subject : "Enquires from" + email.value,
+        Subject : "Enquires from " + email.value,
         Body : ebody
     }).then(
-      message => alert(message)
+      //message => alert("THanks")
+      function (message) {
+        var successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+      }
+    
     );
 });
