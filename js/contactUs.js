@@ -1,15 +1,15 @@
-const fname = document.getElementById('Contact-1-Name');
+const custName = document.getElementById('Contact-1-Name');
 const email = document.getElementById('Contact-1-Email');
 const question = document.getElementById('Contact-1-Message');
 const submit = document.getElementsByClassName('form-contact')[0];
 
-submit.addEventListener('submit',(e)=>{
+submit.addEventListener('wf-form-Contact-1-Form',(e)=>{
     e.preventDefault();
     console.log("Clicked");
 
     //Mail Format
     let ebody = `
-    <b>Name: </b>${fname.value}<br>
+    <b>Name: </b>${custName.value}<br>
     <b>Email: </b>${email.value}<br>
     <b>Question: </b>${question.value}<br>
     `
